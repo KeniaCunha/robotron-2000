@@ -50,19 +50,43 @@ main {
     font-weight: 500;
     font-size: 130px;
     position: absolute;
-    bottom: 7rem;
-    left: -3rem;
+    bottom: 10rem;
+    left: -10rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    color: rgba(255,255,255,0.8)
+    color:#6887b1
 }
 
 .box {
-    background: rgba(0,0,0,0.6);
+    background: #4d6b94 ;
     clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
     border-left: 5px solid var(--main-cinza);
     height: 80%;
+}
+
+
+.alterarBtn {
+    margin: 2px;
+    border-radius: 50px;
+    width: 150px;
+    border: 3px solid #000000;
+    background-color:#6887b1;
+    color: #FFFFFF;
+}
+
+.botoes {
+    position: relative;   
+    bottom: 8%;
+    display: flex;
+    width: 250px;
+    left: 20%; 
+}
+
+
+.alterarBtn:hover {
+    transform: scale(1.1);
+
 }
 
 /****************************** Equipamentos *****/
@@ -138,9 +162,9 @@ main {
     padding: 0.2em 1em;
     float: right;
     border: 3px solid var(--main-branco);
-    background: var(--main-branco);
     clip-path: polygon(100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 0);
     cursor: pointer;
+    background:#6887b1;
 }
 
 .producao:hover {
@@ -208,6 +232,7 @@ main {
     flex-basis: 35%;
     margin: 10px 0 0;
 }
+
 
 @media screen and (max-width: 1600px) {
     body { 
